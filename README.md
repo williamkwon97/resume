@@ -1,2 +1,2 @@
 # williamkwon97.github.io
-permalink: /profile.html —
+permalink: /index.html —
