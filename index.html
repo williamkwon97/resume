@@ -1,48 +1,439 @@
 <!DOCTYPE html>
- <link rel="stylesheet" href="index.css">
+<html lang="en">
+  <head>
+    <title>ACTS</title>
+    <!-- Meta -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <link rel="shortcut icon" href="acts_favicon.ico" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:300,400,300italic,400italic"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,700"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <!-- FontAwesome JS-->
+    <script defer src="assets/fontawesome/js/all.min.js"></script>
+    <!-- Global CSS -->
+    <link
+      rel="stylesheet"
+      href="assets/plugins/bootstrap/css/bootstrap.min.css"
+    />
+    <!-- Plugins CSS -->
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css" />
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/theme-3.css" />
+    <!-- GitHub Button -->
+    <script async defer src="https://buttons.github.io/buttons.js"></script>
+  </head>
 
-<div id="header"></div>
+  <body data-spy="scroll">
+    <!---//Facebook button code-->
+    <div id="fb-root"></div>
+    <script>
+      (function (d, s, id) {
+        var js,
+          fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+        fjs.parentNode.insertBefore(js, fjs);
+      })(document, "script", "facebook-jssdk");
+    </script>
 
-  <br><br>
-  <h1><img src="profile.jpeg" alt="profile" height="300" width="300"></h1>
-  <h2>William Kwon</h2>
-  <p>williamkwon97@gmail.com</p>
-  <hr />
-  <br>
-  <h3>Skills</h3>
-  <ul>
-    <p>Programming Languages: Python, Swift, R, C++, Java, JavaScript, Unix,/Linux, HTML/CSS, SQL</p>
-    <p>Development Tools: XCode, R studio, Terminal, Android, Studio, JSON, Eclipse, Sublime,Pycharm, Atom , Flask&Django, Cocoapod</p>
-    <p>Source Control: Git,Git Desktop, Git Kraken</p>
-    <p>Documentation: Confluence, Testrail</p>
-  </ul>
-  <h3>Education</h3>
-  <ul>
+    <!-- ******HEADER****** -->
+    <header id="header" class="header">
+      <div class="container">
+        <h1 class="logo float-left">
+          <a class="scrollto" href="#promo">
+            <span class="logo-title">ACTS</span>
+          </a>
+        </h1>
+        <!--//logo-->
+        <nav
+          id="main-nav"
+          class="main-nav navbar-expand-md float-right"
+          role="navigation"
+        >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbar-collapse"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span></button
+          ><!--//nav-toggle-->
+
+          <div class="navbar-collapse collapse" id="navbar-collapse">
+            <ul class="nav navbar-nav">
+              <li class="nav-item sr-only">
+                <a class="nav-link scrollto" href="#promo">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scrollto" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scrollto" href="#features">Subscribe</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scrollto" href="#license">Donate</a>
+              </li>
+              <li class="nav-item last">
+                <a class="nav-link scrollto" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <!--//nav-->
+          </div>
+          <!--//navabr-collapse-->
+        </nav>
+        <!--//main-nav-->
+      </div>
+    </header>
+    <!--//header-->
+
+    <!-- ******PROMO****** -->
+    <section id="promo" class="promo section offset-header">
+      <div class="container text-center">
+        <h2 class="title"><span class="highlight">ACTS ATX</span></h2>
+        <p class="intro">
+          To support the lives of those who are at a disadvantage, regardless or
+          race, origin, age through giving and service based actions/programs.
+        </p>
+        <div class="btns">
+          <a
+            class="btn btn-outline btn-outline-medium scrollto"
+            href="#about"
+            target="_blank"
+            >Learn More <i class="fa fa-angle-double-down"></i
+          ></a>
+        </div>
+
+        <!--//meta-->
+      </div>
+
+      <!--//container-->
+      <div class="social-media">
+        <div class="social-media-inner container text-center">
+          <ul class="list-inline mb-2">
+            <li class="list-inline-item">
+                <a
+                  href="mailto:atcsatx20@gmail.com"
+                  target="_blank"
+                  ><i class="far fa-envelope"></i
+                ></a>
+              </li>
+            <!--//twitter-follow-->
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!--//promo-->
+
+    <!-- ******ABOUT****** -->
+    <section id="about" class="about section">
+      <div class="container">
+        <h2 class="title text-center">What is ACTS?</h2>
+        <p class="intro text-center">
+          ACTS ATX is an Austin-based organization (seeking non-profit 501c3 status formed by two UT graduates for the sole purpose of bringing communities 
+          closer together. Acts ATX focuses on Acts of Service that benefit the immediate low income community, such as: Volunteering, Clothes and Kindness, 
+          Project Educate and Counseling*
+        </p>
+        <p class="intro text-center">
+        *Due to Covid, our programs are only offered via virtual sessions only
+        </p>
+        <div class="row">
+          <div class="item col-lg-4 col-md-6 col-12">
+            <div class="icon-holder">
+              <i class="fas fa-hands-helping"></i>
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Volunteering</h3>
+              <p>
+                  Connecting individuals and building social networks through volunteering in the Austin community.
+               
+              </p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          <div class="item col-lg-4 col-md-6 col-12">
+            <div class="icon-holder">
+              <i class="fas fa-tshirt"></i>
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Clothes and Kindness</h3>
+              <p>
+                 Collecting lightly-worn clothing items from willing donors and businesses, refurbishing them and sending them to families in need.
+               
+              </p>
+            </div>
+            <!--//content--> 
+          </div> 
+          <!--//item-->
+          <div class="item col-lg-4 col-md-6 col-12">
+            <div class="icon-holder">
+              <i class="fas fa-chalkboard-teacher"></i>
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Project Educate</h3>
+              <p>
+                 Provide education to children in need via customized tutoring sessions (English Second Language, Math, Korean, Computer Programming, 
+                 Sociology & Social Support, Research Theory and Writing).
+                
+              </p>
+            </div>
+            <!--//content-->
+          </div>
+          <!--//item-->
+          <div class="clearfix visible-md"></div>
+          <div class="item col-lg-4 col-md-6 col-12">
+            <div class="icon-holder">
+              <i class="fas fa-seedling"></i>
+            </div>
+            <div class="content">
+              <h3 class="sub-title">Counseling</h3>
+              <p>
+                Connecting individuals seeking academic counseling and counseling for mental health needs.
+                
+              </p>
+            </div>
+            <!--//content-->
+          </div>
+          
+          </div>
+          <!--//item-->
+        </div>
+        <!--//row-->
+      </div>
+      <!--//container-->
+    </section>
+    <!--//about-->
+
+    <!-- ******FEATURES****** -->
+    <section id="features" class="features section">
+      <div class="container text-center">
+        <h2 class="title">Subscribe</h2>
+        
+      </div>
+      <!--//container-->
+      <!-- Begin Mailchimp Signup Form -->
+      <link href="//cdn-images.mailchimp.com/embedcode/horizontal-slim-10_7.css" rel="stylesheet" type="text/css">
+      <style type="text/css">
+        #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; width:100%;}
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+          We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+      </style>
+      <div id="mc_embed_signup">
+      <form action="https://gmail.us7.list-manage.com/subscribe/post?u=56e917fa9bb158b02161ace2d&amp;id=1dc9620fc4" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <div id="mc_embed_signup_scroll">
+        <label for="mce-EMAIL">Subscribe</label>
+        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+          <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+          <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_56e917fa9bb158b02161ace2d_1dc9620fc4" tabindex="-1" value="" ></div>
+          <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+          </div>
+      </form>
+      
+
+
+      <!--End mc_embed_signup-->
+      </div>
+            
+    </section>
+    </div>
+    <!--//features-->
+
+    <!-- ******DONATE****** -->
+
     
-    <p>University of Texas at Austin</p>
-    <p>Major in Applied Math and Minor in Computer Science</p>
+    <section id="license" class="license section">
+      <div class="container">
+        <div class="donate-inner">
+          <h2 class="title text-center">Donate</h2>
+          <div class="info">
+            <p>
+              <strong>Become a donor today!</strong><br />As a small grassroots
+              organization, know that every dollar will have an immense impact
+              on our ability to continue working towards our mission.
 
-    <!--Link-->
-  </ul>
-  <h3>Projects</h3>
-  <ul>
-    <p>IMDB App-Built unofficial app that shows recent popular movies in IMDB in Swift</p>
-    <p>Silverarrow- Built a Python script-based crime fiction game comprised of mostly dialogue allowing for the interaction with non-playable characters (NPC’s)</p>
-    <p>Dating Response Project - Built project that analyzes dating response rates by different and same genders after their dates in the R program</p>
-  </ul>
-  <h3>Hobbies</h3>
-  <ul>
-    <p>Looking for cat pictures and videos</p>
-    <p>Hiking(hills...)</p>
-    <p>Tennis(come match with me!)</p>
-  </ul>
-</div>
-<div class="right"></div>
-<div id="footer">
-  <h3>Links</h3>
-    <a href="https://www.linkedin.com/in/william-kwon-4a5846137/">
-    <li>Linkedin</li>
-    </a>
-    <a href="https://www.github.com/williamkwon97">
-    <li>Github</li>
-    </a>
+              We currently only accept through Venmo.
+              Please when you send the donation with 
+              "Your name - ACTS Donation" to @ACTS-ATX
+
+              
+            </p>
+
+            
+          
+              Your support means the world to us :)
+              </p>
+              
+              
+        <!--//donate-inner-->
+      </div>
+      <!--//container-->
+    </section>
+    <!--//how-->
+
+    <!-- ******CONTACT****** -->
+    <section id="contact" class="contact section has-pattern">
+      <div class="container">
+        <div class="contact-inner">
+          <h2 class="title text-center">Contact</h2>
+          <p class="intro text-center">
+          </p>
+          <div class="author-message">
+            <div class="profile">
+              <img class="img-fluid" src="assets/images/profile-w.png" alt="" />
+            </div>
+            <!--//profile-->
+            <div class="speech-bubble">
+              <h3 class="sub-title">
+                About William
+              </h3>
+              <p>
+                With expertise in Non-Profit Education Institution, William has worked for University of Texas and has teaching experience in elementary
+                level education to high school education. William believes in serving the community and has strong values in education, instilled in him from his
+                parents and his home church.
+
+              </p>
+            
+              <div class="source">
+                <span class="name"
+                  ><a href="https://twitter.com/3rdwave_themes" target="_blank"
+                    >William Kwon</a
+                  ></span
+                >
+                <br />
+                <span class="title"> Co-Founder & CEO</span>
+                <br />
+                <span class="title"> UT Austin Class of 2020</span>
+              </div>
+
+              
+              
+              <!--//source-->
+            </div>
+            
+
+            <!--//speech-bubble-->
+            <p class="intro text-center">
+          </p>
+          <div class="author-message">
+            <div class="profile">
+              <img class="img-fluid" src="assets/images/profile-j.jpeg" alt="" />
+            </div>
+            <!--//profile-->
+            <div class="speech-bubble">
+              <h3 class="sub-title">
+                About Jeremy
+              </h3>
+              <p>
+                With expertise in Non-Profit Education Institution, William has worked for University of Texas and has teaching experience in elementary
+                 level education to high school education. William is also an alumnus of the Lions club, one of the largest volunteer organizations nationally.
+                  William believes in serving the community and has strong values in education, instilled in him from his parents and his home church.
+              </p>
+            
+              <div class="source">
+                <span class="name"
+                  ><a href="https://twitter.com/3rdwave_themes" target="_blank"
+                    >Jeremy Wright</a
+                  ></span
+                >
+                <br />
+                <span class="title"> Co-Founder & COO</span>
+                <br />
+                <span class="title"> UT Austin Class of 2020</span>
+              </div>
+          </div>
+          <br />
+          <!--//author-message-->
+          <div class="clearfix"></div>
+          <div class="info text-center">
+            <h4 class="sub-title">Get Connected</h4>
+            <ul class="social-icons list-inline">
+              
+              <li class="list-inline-item">
+                <a href="https://www.facebook.com/3rdwavethemes" target="_blank"
+                  ><i class="fab fa-facebook-f"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://twitter.com/3rdwave_themes" target="_blank"
+                  ><i class="fab fa-instagram"></i
+                ></a>
+              </li>
+
+              
+              <li class="list-inline-item last">
+                <a
+                  href="mailto:atcsatx20@gmail.com"
+                  target="_blank"
+                  ><i class="fas fa-envelope"></i
+                ></a>
+              </li>
+            </ul>
+            
+          </div>
+          
+         
+          
+        <!--//contact-inner-->
+         <!--//info-->
+        
+      </div>
+      <!--//container-->
+       <!--//info-->
+          <p class="info text-center">“Now the full number of those who believed were of one heart and soul…” Acts 4:32
+</p>
+    </section>
+    <!--//contact-->
+
+    <!-- ******FOOTER****** -->
+    <footer class="footer">
+      <div class="container text-center">
+        <!--/* This template is free as long as you keep the footer attribution link. If you'd like to use the template without the attribution link, you can buy the commercial license via our website: themes.3rdwavemedia.com Thank you for your support. :) */-->
+        <small class="copyright"
+          >Designed  and Edited by
+          
+            Xiaoying Riley and William Kwon</a
+          >
+          </small
+        >
+      </div>
+      <!--//container-->
+    </footer>
+    <!--//footer-->
+
+    <!-- Javascript -->
+    <script
+      type="text/javascript"
+      src="assets/plugins/jquery-3.4.1.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/plugins/jquery.easing.1.3.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/plugins/bootstrap/js/bootstrap.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"
+    ></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>
+    <script type="text/javascript" src="assets/js/main.js"></script>
+  </body>
+</html>
