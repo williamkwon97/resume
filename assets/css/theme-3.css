@@ -338,7 +338,7 @@ pre code {
 .features {
   padding: 80px 0;
   background: #fff;
-  color: #fff;
+  color: #2a435c;
 }
 
 .features .title {
@@ -362,7 +362,7 @@ pre code {
 
 .features .feature-list li .svg-inline--fa {
   margin-right: 5px;
-  color: #fff;
+  color: #2a435c;
 }
 
 /* ======= Docs Section ======= */
